@@ -2028,3 +2028,125 @@ function updateTitlesList() {
 
   // Initial Titles List Update (if needed)
   updateTitlesList();
+
+  // Battle Pass System
+  const battlePass = {
+    currentTier: parseInt(localStorage.getItem('battlePassTier')) || 1,
+    currentXP: parseInt(localStorage.getItem('battlePassXP')) || 0,
+    maxTiers: 50,
+    xpPerTier: 500,
+    tiers: [
+      { reward: { type: 'credits', amount: 100 } },
+      { reward: { type: 'title', name: 'Season 16 Starter' } },
+      { reward: { type: 'credits', amount: 150 } },
+      { reward: { type: 'title', name: 'Season 16 Veteran' } },
+      { reward: { type: 'credits', amount: 200 } },
+      // Add more tiers as needed
+    ]
+  };
+
+  // Add Battle Pass functions
+  function initializeBattlePass() {
+    updateBattlePassUI();
+    renderBattlePassTiers();
+  }
+
+  function updateBattlePassUI() {
+    const { currentTier, currentXP, xpPerTier } = battlePass;
+    const progress = (currentXP / xpPerTier) * 100;
+    
+    document.getElementById('current-tier').textContent = `Tier ${currentTier}`;
+    document.getElementById('current-xp').textContent = `${currentXP}/${xpPerTier} XP`;
+    document.querySelector('.progress-fill').style.width = `${progress}%`;
+  }
+
+  function renderBattlePassTiers() {
+    const tiersContainer = document.querySelector('.battlepass-tiers');
+    tiersContainer.innerHTML = '';
+    
+    for (let i = 1; i <= battlePass.maxTiers; i++) {
+      const tier = battlePass.tiers[i - 1] || { reward: { type: 'credits', amount: 100 } };
+      const isUnlocked = i < battlePass.currentTier;
+      const isCurrent = i === battlePass.currentTier;
+      
+      const tierElement = document.createElement('div');
+      tierElement.className = `tier-item ${isUnlocked ? 'unlocked' : isCurrent ? 'current' : 'locked'}`;
+      
+      const rewardText = tier.reward.type === 'credits' 
+        ? `${tier.reward.amount} Credits`
+        : tier.reward.name;
+      
+      tierElement.innerHTML = `
+        <h3>Tier ${i}</h3>
+        <div class="tier-reward ${tier.reward.type}">
+          ${rewardText}
+        </div>
+      `;
+      
+      tiersContainer.appendChild(tierElement);
+    }
+  }
+
+  function awardBattlePassXP(isWin) {
+    const xpGained = isWin ? Math.floor(Math.random() * 26) + 25 : 15; // 25-50 XP for win, 15 XP for loss
+    battlePass.currentXP += xpGained;
+    
+    // Check for tier up
+    while (battlePass.currentXP >= battlePass.xpPerTier) {
+      battlePass.currentXP -= battlePass.xpPerTier;
+      battlePass.currentTier++;
+      
+      // Award tier reward
+      const tierReward = battlePass.tiers[battlePass.currentTier - 1];
+      if (tierReward) {
+        if (tierReward.reward.type === 'credits') {
+          player.credits = (player.credits || 0) + tierReward.reward.amount;
+        } else if (tierReward.reward.type === 'title') {
+          if (!player.titles.includes(tierReward.reward.name)) {
+            player.titles.push(tierReward.reward.name);
+            showNewTitleNotification(tierReward.reward.name);
+          }
+        }
+      }
+    }
+    
+    // Save progress
+    localStorage.setItem('battlePassTier', battlePass.currentTier);
+    localStorage.setItem('battlePassXP', battlePass.currentXP);
+    localStorage.setItem('credits', player.credits);
+    
+    // Update UI
+    updateBattlePassUI();
+    renderBattlePassTiers();
+    updateMenu();
+  }
+
+  // Modify the existing endGame function to include Battle Pass XP
+  const originalEndGame = endGame;
+  endGame = function(playerWon) {
+    originalEndGame(playerWon);
+    awardBattlePassXP(playerWon);
+  };
+
+  // Add tab switching functionality
+  document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const tabName = button.dataset.tab;
+      
+      // Update active tab button
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.toggle('active', btn === button);
+      });
+      
+      // Update active tab content
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.toggle('active', content.id === `${tabName}-tab`);
+      });
+    });
+  });
+
+  // Initialize Battle Pass when the page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    // ... existing DOMContentLoaded code ...
+    initializeBattlePass();
+  });
