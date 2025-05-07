@@ -1,5 +1,5 @@
 // Screen Elements
-const screens = {
+  const screens = {
     menu: document.getElementById("menu-screen"),
     queue: document.getElementById("queue-screen"),
     match: document.getElementById("match-screen"),
@@ -829,6 +829,7 @@ const screens = {
   // RCCS TAGS
   // RCCS EXTRAS
 {"title": "2-TIME WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+{"title": "RCCS WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
 {"title": "RCCS MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
 {"title": "RCCS REGIONAL CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
 {"title": "RCCS ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
