@@ -1,5 +1,5 @@
 // Screen Elements
-const screens = {
+  const screens = {
     menu: document.getElementById("menu-screen"),
     queue: document.getElementById("queue-screen"),
     match: document.getElementById("match-screen"),
@@ -155,21 +155,21 @@ const screens = {
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": ["z"]
   },
   {
     "title": "PRE-SEASON CLICKER LEGEND",
     "color": "#ed8ecc",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": [""]
   },
   {
     "title": "S1 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": [""]
   },
   {
     "title": "S1 CLICKER LEGEND",
@@ -183,14 +183,14 @@ const screens = {
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": [""]
   },
   {
     "title": "S2 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": [""]
   },
 
   {
@@ -198,196 +198,196 @@ const screens = {
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S3 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S4 GRAND CHAMPION",
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S4 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S5 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S5 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S6 GRAND CHAMPION",
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S6 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S7 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S7 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S8 GRAND CHAMPION",
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S8 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S9 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S9 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S10 GRAND CHAMPION",
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S10 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S11 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S11 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S12 GRAND CHAMPION",
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S12 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S13 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S13 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S14 GRAND CHAMPION",
     "color": "gold",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S14 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": [""]
   },
     {
     "title": "S15 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S15 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": null,
-    "wlUsers": ["kwpid"]
+    "wlUsers": [""]
   },
      {
     "title": "S16 GRAND CHAMPION",
     "color": "red",
     "glow": true,
     "minMMR": 1434,
-    "wlUsers": ["kwpid"]
+    "wlUsers": null
   },
   {
     "title": "S16 CLICKER LEGEND",
     "color": "white",
     "glow": true,
     "minMMR": 1864,
-    "wlUsers": ["kwpid"]
+    "wlUsers": [""]
   },
 
     
@@ -438,14 +438,14 @@ const screens = {
   color: "gold",
   glow: true,
   minMMR: null,
-  wlUsers: ["kwpid"],
+  wlUsers: ["9"],
 },
 {
   title: "S3 TOP 3",
   color: "gold",
   glow: true,
   minMMR: null,
-  wlUsers: ["kwpid"],
+  wlUsers: ["9"],
 },
 {
   title: "S3 TOP CHAMPION",
@@ -459,14 +459,14 @@ const screens = {
   color: "gold",
   glow: true,
   minMMR: null,
-  wlUsers: ["kwpid"],
+  wlUsers: ["9"],
 },
 {
   title: "S4 TOP 3",
   color: "gold",
   glow: true,
   minMMR: null,
-  wlUsers: ["kwpid"],
+  wlUsers: [""],
 },
 {
   title: "S4 TOP CHAMPION",
@@ -585,7 +585,7 @@ const screens = {
   color: "gold",
   glow: true,
   minMMR: null,
-  wlUsers: ["kwpid"],
+  wlUsers: [""],
 },
 {
   title: "S10 TOP 3",
@@ -648,14 +648,14 @@ const screens = {
   color: "gold",
   glow: true,
   minMMR: null,
-  wlUsers: ["kwpid"],
+  wlUsers: [""],
 },
 {
   title: "S13 TOP 3",
   color: "gold",
   glow: true,
   minMMR: null,
-  wlUsers: ["kwpid"],
+  wlUsers: [""],
 },
 {
   title: "S13 TOP CHAMPION",
@@ -829,9 +829,10 @@ const screens = {
   // RCCS TAGS
   // RCCS EXTRAS
 {"title": "2-TIME WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
-{"title": "RCCS MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-{"title": "RCCS REGIONAL CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-{"title": "RCCS ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+{"title": "RCCS WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+{"title": "RCCS MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+{"title": "RCCS REGIONAL CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+{"title": "RCCS ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
 
   // SEASON 1
   {"title": "RCCS S1 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
@@ -874,74 +875,74 @@ const screens = {
   {"title": "RCCS S4 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
 
   // SEASON 5
-  {"title": "RCCS S5 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S5 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S5 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
-  {"title": "RCCS S5 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S5 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S5 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S5 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S5 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S5 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S5 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S5 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S5 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
 
   // SEASON 6
-  {"title": "RCCS S6 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S6 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S6 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
-  {"title": "RCCS S6 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S6 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S6 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S6 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S6 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S6 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S6 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S6 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S6 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
 
   // SEASON 7
-  {"title": "RCCS S7 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S7 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S7 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S7 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S7 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S7 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S7 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S7 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S7 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S7 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S7 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S7 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S7 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S7 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S7 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S7 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S7 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   
   // SEASON 8
-  {"title": "RCCS S8 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S8 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S8 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S8 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S8 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S8 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S8 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S8 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S8 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S8 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S8 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S8 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S8 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S8 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S8 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S8 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S8 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
     
   // SEASON 9 - ULTIMATE
-  {"title": "RCCS S9 CHALLENGER", "color": "#4da1f6", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 CHARLOTTE MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 CHARLOTTE MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S9 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S9 CHALLENGER", "color": "#4da1f6", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 CHARLOTTE MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 CHARLOTTE MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S9 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S9 MVP", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
     
      // SEASON X - ULTIMATE
-  {"title": "RCCS S10 CHALLENGER", "color": "#4da1f6", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 ORLANDO MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 ORLANDO MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
-  {"title": "RCCS S10 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": ["kwpid"]},
+  {"title": "RCCS S10 CHALLENGER", "color": "#4da1f6", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 ELITE", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 REGIONAL CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 REGIONAL FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 ORLANDO MAJOR CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 ORLANDO MAJOR CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 MAJOR FINALIST", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
+  {"title": "RCCS S10 WORLDS CONTENDER", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S10 WORLD CHAMPION", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
   {"title": "RCCS S10 MVP", "color": "aqua", "glow": true, "minMMR": null, "wlUsers": [""]},
 
@@ -973,7 +974,7 @@ const screens = {
       color: "gold",
       glow: true,
       minMMR: null,
-      wlUsers: ["kwpid"],
+      wlUsers: [""],
     },
     {
       title: "SALT MINE 1 MAIN EVENT QUALIFIER",
@@ -1001,21 +1002,21 @@ const screens = {
       color: "gold",
       glow: true,
       minMMR: null,
-      wlUsers: ["kwpid"],
+      wlUsers: [""],
     },
     {
       title: "SALT MINE 2 MAIN EVENT QUALIFIER",
       color: "gold",
       glow: true,
       minMMR: null,
-      wlUsers: ["kwpid"],
+      wlUsers: [""],
     },
     {
       title: "SALT MINE 2 RUNNER-UP",
       color: "gold",
       glow: true,
       minMMR: null,
-      wlUsers: ["kwpid"],
+      wlUsers: [""],
     },
     {
       title: "SALT MINE 2 CHAMPION",
@@ -1029,21 +1030,21 @@ const screens = {
       color: "gold",
       glow: true,
       minMMR: null,
-      wlUsers: ["kwpid"],
+      wlUsers: [""],
     },
     {
       title: "SALT MINE 3 MAIN EVENT QUALIFIER",
       color: "gold",
       glow: true,
       minMMR: null,
-      wlUsers: ["kwpid"],
+      wlUsers: [""],
     },
     {
       title: "SALT MINE 3 RUNNER-UP",
       color: "gold",
       glow: true,
       minMMR: null,
-      wlUsers: ["kwpid"],
+      wlUsers: [""],
     },
     {
       title: "SALT MINE 3 CHAMPION",
