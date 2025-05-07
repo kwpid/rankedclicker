@@ -1074,6 +1074,7 @@
     losses: parseInt(localStorage.getItem("losses")) || 0,
     clicks: 0,
     cps: 0,
+    credits: parseInt(localStorage.getItem("credits")) || 0,
     equippedTitle: localStorage.getItem("equippedTitle") || "OG",
     notifiedTitles: JSON.parse(localStorage.getItem("notifiedTitles")) || [], // To track notifications
   };
@@ -1172,45 +1173,6 @@ const clickerLegendAIs = [
 { name: "Blaze.", title: "RCCS S5 REGIONAL CHAMPION", mmr: 1965 },
 { name: "skyfall", title: "SALT MINE 3 CHAMPION", mmr: 2040 },
 { name: "steam", title: "S10 CLICKER LEGEND", mmr: 1902 },
-  { name: "storm", title: "SALT MINE 3 QUALIFIER", mmr: 2028 },
-{ name: "rek:3", title: "S5 GRAND CHAMPION", mmr: 1956 },
-{ name: "vyna1", title: "S10 GRAND CHAMPION", mmr: 1914 },
-{ name: "deltairlines", title: "RCCS S7 CONTENDER", mmr: 1987 },
-{ name: "ph", title: "S3 CLICKER LEGEND", mmr: 1872 },
-{ name: "trace", title: "S9 GRAND CHAMPION", mmr: 1935 },
-{ name: "avidic", title: "S2 CLICKER LEGEND", mmr: 1921 },
-{ name: "tekk!", title: "S6 GRAND CHAMPION", mmr: 1943 },
-{ name: "fluwo", title: "SALT MINE 2 CONTENDER", mmr: 2012 },
-{ name: "climp?", title: "S13 CLICKER LEGEND", mmr: 1893 },
-{ name: "zark", title: "RCCS S8 CHALLENGER", mmr: 1908 },
-{ name: "diza", title: "RCCS S9 WORLDS CONTENDER", mmr: 1946 },
-{ name: "O", title: "S12 GRAND CHAMPION", mmr: 1951 },
-{ name: "Snooze", title: "S9 CLICKER LEGEND", mmr: 1879 },
-{ name: "gode", title: "RCCS S4 MAJOR CONTENDER", mmr: 1994 },
-{ name: "cola", title: "S8 GRAND CHAMPION", mmr: 1940 },
-{ name: "hush(!)", title: "S4 GRAND CHAMPION", mmr: 1917 },
-{ name: "sh4oud", title: "SALT MINE 1 CHAMPION", mmr: 2042 },
-{ name: "vvv", title: "S11 CLICKER LEGEND", mmr: 1884 },
-{ name: "critt", title: "S6 CLICKER LEGEND", mmr: 1930 },
-{ name: "darkandlost2009", title: "RCCS S7 MAJOR CONTENDER", mmr: 1989 },
-{ name: "pulse jubbo", title: "S10 GRAND CHAMPION", mmr: 1948 },
-{ name: "pl havicic", title: "RCCS S6 REGIONAL CHAMPION", mmr: 2006 },
-{ name: "ryft.", title: "S12 CLICKER LEGEND", mmr: 1895 },
-{ name: "Lyric", title: "RCCS S5 CONTENDER", mmr: 1913 },
-{ name: "dryft.", title: "S7 GRAND CHAMPION", mmr: 1959 },
-{ name: "horiz", title: "RCCS S9 REGIONAL CHAMPION", mmr: 1975 },
-{ name: "zeno", title: "S14 GRAND CHAMPION", mmr: 1927 },
-{ name: "octane", title: "S5 CLICKER LEGEND", mmr: 1901 },
-{ name: "wavetidess", title: "SALT MINE 2 QUALIFIER", mmr: 2020 },
-{ name: "loster", title: "RCCS S7 WORLD CHAMPION", mmr: 2125 },
-{ name: "mamba", title: "S8 GRAND CHAMPION", mmr: 1942 },
-{ name: "Jack", title: "S1 GRAND CHAMPION", mmr: 1938 },
-{ name: "innadeze", title: "RCCS S6 MAJOR CONTENDER", mmr: 1982 },
-{ name: "s", title: "S3 GRAND CHAMPION", mmr: 1964 },
-{ name: "offtenlost", title: "S5 GRAND CHAMPION", mmr: 1929 },
-{ name: "bivo", title: "RCCS S8 REGIONAL CHAMPION", mmr: 1986 },
-{ name: "Trace", title: "SALT MINE 3 MAIN EVENT QUALIFIER", mmr: 2017 },
-{ name: "Talon", title: "S13 GRAND CHAMPION", mmr: 1918 },
   { name: "storm", title: "SALT MINE 3 QUALIFIER", mmr: 2028 },
 { name: "rek:3", title: "S5 GRAND CHAMPION", mmr: 1956 },
 { name: "vyna1", title: "S10 GRAND CHAMPION", mmr: 1914 },
@@ -1401,11 +1363,9 @@ function sortTitles(titles) {
     localStorage.setItem("titles", JSON.stringify(player.titles));
     localStorage.setItem("equippedTitle", player.equippedTitle);
     localStorage.setItem("lastOpponent", JSON.stringify(player.lastOpponent || null)); // Save last opponent
-  localStorage.setItem("lastMatchTime", player.lastMatchTime || ""); // Save last match time
-    localStorage.setItem(
-      "notifiedTitles",
-      JSON.stringify(player.notifiedTitles)
-    );
+    localStorage.setItem("lastMatchTime", player.lastMatchTime || ""); // Save last match time
+    localStorage.setItem("notifiedTitles", JSON.stringify(player.notifiedTitles));
+    localStorage.setItem("credits", player.credits);
   }
 
   // Update the Menu Screen with current player data
@@ -1418,6 +1378,7 @@ function sortTitles(titles) {
     document.getElementById(
       "stats-wl"
     ).textContent = `W ${player.wins} -  L ${player.losses}`;
+    document.getElementById("credits-display").textContent = player.credits;
 
     const winPercentage =
       player.wins + player.losses > 0
@@ -1921,7 +1882,8 @@ function updateTitlesList() {
         newsPopup.classList.remove("hidden");
       });
     });
-
+    // ... existing DOMContentLoaded code ...
+    initializeBattlePass();
     // Close the pop-up
     closeNewsPopup.addEventListener("click", () => {
       newsPopup.classList.add("hidden");
@@ -2028,3 +1990,123 @@ function updateTitlesList() {
 
   // Initial Titles List Update (if needed)
   updateTitlesList();
+
+  // Battle Pass System
+  const battlePass = {
+    currentTier: parseInt(localStorage.getItem('battlePassTier')) || 1,
+    currentXP: parseInt(localStorage.getItem('battlePassXP')) || 0,
+    maxTiers: 50,
+    xpPerTier: 500,
+    tiers: [
+      { reward: { type: 'credits', amount: 100 } },
+      { reward: { type: 'title', name: 'Season 16 Starter' } },
+      { reward: { type: 'credits', amount: 150 } },
+      { reward: { type: 'title', name: 'Season 16 Veteran' } },
+      { reward: { type: 'credits', amount: 200 } },
+      // Add more tiers as needed
+    ]
+  };
+
+  // Add Battle Pass functions
+  function initializeBattlePass() {
+    updateBattlePassUI();
+    renderBattlePassTiers();
+  }
+
+  function updateBattlePassUI() {
+    const { currentTier, currentXP, xpPerTier } = battlePass;
+    const progress = (currentXP / xpPerTier) * 100;
+    
+    document.getElementById('current-tier').textContent = `Tier ${currentTier}`;
+    document.getElementById('current-xp').textContent = `${currentXP}/${xpPerTier} XP`;
+    document.querySelector('.progress-fill').style.width = `${progress}%`;
+  }
+
+  function renderBattlePassTiers() {
+    const tiersContainer = document.querySelector('.battlepass-tiers');
+    tiersContainer.innerHTML = '';
+    
+    for (let i = 1; i <= battlePass.maxTiers; i++) {
+      const tier = battlePass.tiers[i - 1] || { reward: { type: 'credits', amount: 100 } };
+      const isUnlocked = i < battlePass.currentTier;
+      const isCurrent = i === battlePass.currentTier;
+      
+      const tierElement = document.createElement('div');
+      tierElement.className = `tier-item ${isUnlocked ? 'unlocked' : isCurrent ? 'current' : 'locked'}`;
+      
+      const rewardText = tier.reward.type === 'credits' 
+        ? `${tier.reward.amount} Credits`
+        : tier.reward.name;
+      
+      tierElement.innerHTML = `
+        <h3>Tier ${i}</h3>
+        <div class="tier-reward ${tier.reward.type}">
+          ${rewardText}
+        </div>
+      `;
+      
+      tiersContainer.appendChild(tierElement);
+    }
+  }
+
+  function awardBattlePassXP(isWin) {
+    const xpGained = isWin ? Math.floor(Math.random() * 26) + 25 : 15; // 25-50 XP for win, 15 XP for loss
+    battlePass.currentXP += xpGained;
+    
+    // Check for tier up
+    while (battlePass.currentXP >= battlePass.xpPerTier) {
+      battlePass.currentXP -= battlePass.xpPerTier;
+      battlePass.currentTier++;
+      
+      // Award tier reward
+      const tierReward = battlePass.tiers[battlePass.currentTier - 1];
+      if (tierReward) {
+        if (tierReward.reward.type === 'credits') {
+          player.credits = (player.credits || 0) + tierReward.reward.amount;
+        } else if (tierReward.reward.type === 'title') {
+          if (!player.titles.includes(tierReward.reward.name)) {
+            player.titles.push(tierReward.reward.name);
+            showNewTitleNotification(tierReward.reward.name);
+          }
+        }
+      }
+    }
+    
+    // Save progress
+    localStorage.setItem('battlePassTier', battlePass.currentTier);
+    localStorage.setItem('battlePassXP', battlePass.currentXP);
+    localStorage.setItem('credits', player.credits);
+    
+    // Update UI
+    updateBattlePassUI();
+    renderBattlePassTiers();
+    updateMenu();
+  }
+
+  // Modify the existing endGame function to include Battle Pass XP
+  const originalEndGame = endGame;
+  endGame = function(playerWon) {
+    originalEndGame(playerWon);
+    awardBattlePassXP(playerWon);
+  };
+
+  // Add tab switching functionality
+  document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const tabName = button.dataset.tab;
+      
+      // Update active tab button
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.toggle('active', btn === button);
+      });
+      
+      // Update active tab content
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.toggle('active', content.id === `${tabName}-tab`);
+      });
+    });
+  });
+
+
+
+ 
