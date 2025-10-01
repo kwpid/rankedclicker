@@ -377,17 +377,73 @@
   },
      {
     "title": "S16 GRAND CHAMPION",
-    "color": "red",
+    "color": "gold",
     "glow": true,
-    "minMMR": 1434,
-    "wlUsers": null
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
   },
   {
     "title": "S16 CLICKER LEGEND",
     "color": "white",
     "glow": true,
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
+  },
+    {
+    "title": "S17 GRAND CHAMPION",
+    "color": "red",
+    "glow": true,
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
+  },
+  {
+    "title": "S17 CLICKER LEGEND",
+    "color": "white",
+    "glow": true,
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
+  },
+    {
+    "title": "S18 GRAND CHAMPION",
+    "color": "gold",
+    "glow": true,
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
+  },
+  {
+    "title": "S18 CLICKER LEGEND",
+    "color": "white",
+    "glow": true,
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
+  },
+    {
+    "title": "S19 GRAND CHAMPION",
+    "color": "red",
+    "glow": true,
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
+  },
+  {
+    "title": "S19 CLICKER LEGEND",
+    "color": "white",
+    "glow": true,
+    "minMMR": null,
+    "wlUsers": ["kw7p"]
+  },
+    {
+    "title": "S20 GRAND CHAMPION",
+    "color": "gold",
+    "glow": true,
+    "minMMR": 1434,
+    "wlUsers": ["kw7p"]
+  },
+  {
+    "title": "S20 CLICKER LEGEND",
+    "color": "white",
+    "glow": true,
     "minMMR": 1864,
-    "wlUsers": [""]
+    "wlUsers": ["kw7p"]
   },
 
     
